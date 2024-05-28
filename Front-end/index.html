@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Carro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <span class="span">Apuama</span>
+    </header>
+
+    <main>
+        <section id="registro-do-carro">
+            <div class="form-group">
+                <h2>Informações do Carro:</h2>
+            </div>
+            <form id="info-car">
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="renavam">Renavam:</label>
+                        <input type="text" id="renavam" name="renavam" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="placa">Placa:</label>
+                        <input type="text" id="placa" name="placa" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="chassi">Chassi:</label>
+                        <input type="text" id="chassi" name="chassi" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Proprietario">Nome do proprietário:</label>
+                        <input type="text" id="Proprietario" name="Proprietario" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modelo">Modelo:</label>
+                        <input type="text" id="modelo" name="modelo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Cor">Cor:</label>
+                        <input type="text" id="Cor" name="Cor" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Aquisição">Data de Aquisição:</label>
+                        <input type="date" id="Aquisição" name="Aquisição" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Tipo-de-carro">Tipo de Carro:</label>
+                        <select id="Tipo-de-carro" name="Tipo-de-carro" required>
+                            <option value="Econômico">Econômico</option>
+                            <option value="Padrão">Padrão</option>
+                            <option value="Luxo">Luxo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Cambio">Câmbio:</label>
+                        <select id="Cambio" name="Cambio" required>
+                            <option value="Manual">Manual</option>
+                            <option value="Automático">Automático</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="combustivel">Tipo de combustível:</label>
+                        <select id="combustivel" name="combustivel" required>
+                            <option value="Gasolina">Gasolina</option>
+                            <option value="Alcool">Álcool</option>
+                            <option value="Flex">Flex</option>
+                            <option value="Etanol">Etanol</option>
+                            <option value="Diesel">Diesel</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <div class="form-group2">
+                        <h2>Informações Atuais:</h2>
+                    </div>
+
+                    <div class="form-group2">
+                        <label for="tanque">Nível do tanque:</label>
+                        <input type="text" id="tanque" name="tanque" required>
+                    </div>
+
+                    <div class="form-group2">
+                        <label for="Km">Km atual:</label>
+                        <input type="text" id="Km" name="Km" required>
+                    </div>
+
+                    <div class="form-group2">
+                        <label for="Observação">Observação:</label>
+                        <textarea id="Observação" name="Observação"></textarea>
+                    </div>
+
+                    <button type="submit">Cadastrar Carro</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
