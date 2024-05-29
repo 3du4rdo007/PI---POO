@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cidades</title>
+    <link rel="stylesheet" href="cidades.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li class="menu-item" id="cadastros-gerais">
+                        <a href="#">Cadastros Gerais</a>
+                        <ul class="submenu">
+                            <li><a href="cargos.html">Cargos</a></li>
+                            <li><a href="cidades.html">Cidades</a></li>
+                            <li><a href="grupos_veiculos.html">Grupos de Veículos</a></li>
+                            <li><a href="itens_checkin.html">Itens do Checkin</a></li>
+                            <li><a href="seguros_locacoes.html">Seguros das Locações</a></li>
+                            <li><a href="tipos_adicionais.html">Tipos de Adicionais</a></li>
+                            <li><a href="tipos_cobrancas_extras.html">Tipos de Cobranças Extras</a></li>
+                            <li><a href="tipos_recebimentos.html">Tipos de Recebimentos</a></li>
+                            <li><a href="tipos_fornecedores.html">Tipos de Fornecedores</a></li>
+                            <li><a href="tipos_tarifas.html">Tipos de Tarifas</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item" id="cadastro-pessoas">
+                        <a href="#">Cadastro de Pessoas</a>
+                        <ul class="submenu">
+                            <li><a href="clientes.html">Clientes</a></li>
+                            <li><a href="funcionarios.html">Funcionários</a></li>
+                            <li><a href="fornecedores.html">Fornecedores</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item" id="financeiro">
+                        <a href="#">Financeiro</a>
+                        <ul class="submenu">
+                            <li><a href="plano_contas.html">Plano de Contas</a></li>
+                            <li><a href="contas_receber.html">Contas a Receber</a></li>
+                            <li><a href="contas_pagar.html">Contas a Pagar</a></li>
+                            <li><a href="caixa.html">Caixa</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item" id="locacoes">
+                        <a href="#">Locações</a>
+                        <ul class="submenu">
+                            <li><a href="veiculos.html">Veículos</a></li>
+                            <li><a href="locacoes_devolucoes.html">Locações/Devoluções</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Cadastro de Cidades</h1>
+            </header>
+            <section class="form-section">
+                <form id="cidadeForm">
+                    <label for="cidadeNome">Nome da Cidade:</label>
+                    <input type="text" id="cidadeNome" name="cidadeNome" required>
+                    
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </section>
+            <section class="list-section">
+                <h2>Lista de Cidades</h2>
+                <ul id="cidadeList">
+                    <!-- Lista de cidades será inserida aqui -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="cidades.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
