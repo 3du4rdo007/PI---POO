@@ -1,18 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('cidadeForm');
-    const cidadeList = document.getElementById('cidadeList');
-
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        const cidadeNome = document.getElementById('cidadeNome').value;
-        
-        if (cidadeNome) {
-            const listItem = document.createElement('li');
-            listItem.textContent = cidadeNome;
-            cidadeList.appendChild(listItem);
-            
-            form.reset();
-        }
-    });
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var formData = new FormData(this);
+    fetch('cadastrar_cidade.php', {
+        method: 'POST',
+        body: formData
+    }).then(response => response.text())
+      .then(data => console.log(data));
 });
