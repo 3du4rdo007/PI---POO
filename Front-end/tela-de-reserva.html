@@ -6,36 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="tela-de-reserva.css" rel="stylesheet">
-    
 </head>
 <body>
     <header>
-
-    <div class="container-geral">
-
-        <div class="logo">
-            <img id="img" src="imagens/logo_empresa_com_texto-removebg-preview.png" alt="logoempresa1">
+        <div class="container-geral">
+            <div class="logo">
+                <img id="img" src="imagens/logo_empresa_com_texto-removebg-preview.png" alt="logoempresa1">
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="#">Serviços</a>
+                    <a href="#">Produtos</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Suporte ao cliente</a>
+                </nav>
+            </div>
+            <div class="sociais">
+                <button><i class="fa-brands fa-linkedin"></i></button>
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-youtube"></i></button>
+            </div>
         </div>
-
-        <div class="menu">
-            <nav>
-                <a href="#">Serviços</a>
-                <a href="#">Produtos</a>
-                <a href="#">Contato</a>
-                <a href="#">Suporte ao cliente</a>
-            </nav>
-        </div>
-
-        <div class="sociais">
-            <button><i class="fa-brands fa-linkedin"></i></button>
-            <button><i class="fa-brands fa-instagram"></i></button>
-            <button><i class="fa-brands fa-youtube"></i></button>
-        </div>
-
-    </div>
     </header>
 
-    <box class="box-pesquisa">
+    <div class="box-pesquisa">
         <div class="container-barras">
             <h1>Faça já a sua reserva</h1>
             <input class="retirada" type="text" placeholder="Digite o local de retirada" name="retirada">
@@ -47,101 +41,158 @@
             <button class="entrar">Entrar</button>
             <button id="show-grupo-button"><i class="fa-solid fa-arrow-down"></i></button>
         </div>
-    </box>
+    </div>
     
-    <box class="box-grupo">
-
+    <div class="box-grupo">
         <div class="container-carros">
             <div class="caixas-modelo">
-                <!--Nessa parte do codigo se refere a cada bloco dos grupos abaixo-->
+                <!-- Repetir a estrutura para cada card -->
+                <div class="col">
+                    <div class="grupo-carros">
+                        <div class="barra-titulo">GRUPO A - ECONÔMICO</div>
+                        <div class="img-carros">
+                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png" alt="Carro">
+                        </div>
+                        <span class="span-txt">Fiat Mobi 1.0</span>
+                        <span class="valor-veiculo">R$ 2500,00</span>
+                        <button class="mostrar-detalhes" onclick="mostrarDetalhes(this)">Mostrar Detalhes</button>
+                        <div class="detalhes" style="display: none;">
+                            <p>GRUPO A - ECONÔMICO</p>
+                            <p>4 portas       Ar-condicionado</p>
+                            <p>Vidro elétrico  Trava elétrica</p>
+                            <p>Air bag   Dir.Hidráulica</p>
+                            <p>ABS   Tamanho do porta-malas</p>
+                            <p>4 pessoas</p>
+                            <button class="esconder-detalhes" onclick="esconderDetalhes(this)">Esconder Detalhes</button>
+                        </div>
+                    </div>
+                    <button class="botao-grupo-carros">Escolher</button>
+                </div>
+                <!-- Repetir até aqui para cada card -->
+
+                <!-- Repetir a estrutura para cada card -->
                 <div class="col">
                     <div class="grupo-carros">
                         <div class="barra-titulo">Grupo A</div>
-
                         <div class="img-carros">
-                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png">
+                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png" alt="Carro">
                         </div>
-
-                            <span class="span-txt">xxxxxxxxx</span>
-                            <span class="valor-veiculo">R$ 2500,00</span>
+                        <span class="span-txt">xxxxxxxxx</span>
+                        <span class="valor-veiculo">R$ 2500,00</span>
+                        <button class="mostrar-detalhes" onclick="mostrarDetalhes(this)">Mostrar Detalhes</button>
+                        <div class="detalhes" style="display: none;">
+                            <p>GRUPO DO CARRO - NOME DO GRUPO</p>
+                            <p>4 portas       Ar-condicionado</p>
+                            <p>Vidro elétrico  Trava elétrica</p>
+                            <p>Air bag   Dir.Hidráulica</p>
+                            <p>ABS   Tamanho do porta-malas</p>
+                            <p>4 pessoas</p>
+                            <button class="esconder-detalhes" onclick="esconderDetalhes(this)">Esconder Detalhes</button>
+                        </div>
                     </div>
                     <button class="botao-grupo-carros">Escolher</button>
-                  </div>
+                </div>
+                <!-- Repetir até aqui para cada card -->
 
-                  <div class="col">
+                <!-- Repetir a estrutura para cada card -->
+                <div class="col">
                     <div class="grupo-carros">
                         <div class="barra-titulo">Grupo A</div>
-
                         <div class="img-carros">
-                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png">
+                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png" alt="Carro">
                         </div>
-
-                            <span class="span-txt">xxxxxxxxx</span>
-                            <span class="valor-veiculo">R$ 2500,00</span>
+                        <span class="span-txt">xxxxxxxxx</span>
+                        <span class="valor-veiculo">R$ 2500,00</span>
+                        <button class="mostrar-detalhes" onclick="mostrarDetalhes(this)">Mostrar Detalhes</button>
+                        <div class="detalhes" style="display: none;">
+                            <p>GRUPO DO CARRO - NOME DO GRUPO</p>
+                            <p>4 portas       Ar-condicionado</p>
+                            <p>Vidro elétrico  Trava elétrica</p>
+                            <p>Air bag   Dir.Hidráulica</p>
+                            <p>ABS   Tamanho do porta-malas</p>
+                            <p>4 pessoas</p>
+                            <button class="esconder-detalhes" onclick="esconderDetalhes(this)">Esconder Detalhes</button>
+                        </div>
                     </div>
                     <button class="botao-grupo-carros">Escolher</button>
-                  </div>
-              
-                  <div class="col">
+                </div>
+                <!-- Repetir até aqui para cada card -->
+
+                <!-- Repetir a estrutura para cada card -->
+                <div class="col">
                     <div class="grupo-carros">
                         <div class="barra-titulo">Grupo A</div>
-
                         <div class="img-carros">
-                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png">
+                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png" alt="Carro">
                         </div>
-
-                            <span class="span-txt">xxxxxxxxx</span>
-                            <span class="valor-veiculo">R$ 2500,00</span>
+                        <span class="span-txt">xxxxxxxxx</span>
+                        <span class="valor-veiculo">R$ 2500,00</span>
+                        <button class="mostrar-detalhes" onclick="mostrarDetalhes(this)">Mostrar Detalhes</button>
+                        <div class="detalhes" style="display: none;">
+                            <p>GRUPO DO CARRO - NOME DO GRUPO</p>
+                            <p>4 portas       Ar-condicionado</p>
+                            <p>Vidro elétrico  Trava elétrica</p>
+                            <p>Air bag   Dir.Hidráulica</p>
+                            <p>ABS   Tamanho do porta-malas</p>
+                            <p>4 pessoas</p>
+                            <button class="esconder-detalhes" onclick="esconderDetalhes(this)">Esconder Detalhes</button>
+                        </div>
                     </div>
                     <button class="botao-grupo-carros">Escolher</button>
-                  </div>
+                </div>
+                <!-- Repetir até aqui para cada card -->
 
-              
-                  <div class="col">
+                <!-- Repetir a estrutura para cada card -->
+                <div class="col">
                     <div class="grupo-carros">
                         <div class="barra-titulo">Grupo A</div>
-
                         <div class="img-carros">
-                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png">
+                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png" alt="Carro">
                         </div>
-
-                            <span class="span-txt">xxxxxxxxx</span>
-                            <span class="valor-veiculo">R$ 2500,00</span>
+                        <span class="span-txt">xxxxxxxxx</span>
+                        <span class="valor-veiculo">R$ 2500,00</span>
+                        <button class="mostrar-detalhes" onclick="mostrarDetalhes(this)">Mostrar Detalhes</button>
+                        <div class="detalhes" style="display: none;">
+                            <p>GRUPO DO CARRO - NOME DO GRUPO</p>
+                            <p>4 portas       Ar-condicionado</p>
+                            <p>Vidro elétrico  Trava elétrica</p>
+                            <p>Air bag   Dir.Hidráulica</p>
+                            <p>ABS   Tamanho do porta-malas</p>
+                            <p>4 pessoas</p>
+                            <button class="esconder-detalhes" onclick="esconderDetalhes(this)">Esconder Detalhes</button>
+                        </div>
                     </div>
                     <button class="botao-grupo-carros">Escolher</button>
-                  </div>
+                </div>
+                <!-- Repetir até aqui para cada card -->
 
-                  <div class="col">
+                <!-- Repetir a estrutura para cada card -->
+                <div class="col">
                     <div class="grupo-carros">
                         <div class="barra-titulo">Grupo A</div>
-
                         <div class="img-carros">
-                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png">
+                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png" alt="Carro">
                         </div>
-
-                            <span class="span-txt">xxxxxxxxx</span>
-                            <span class="valor-veiculo">R$ 2500,00</span>
+                        <span class="span-txt">xxxxxxxxx</span>
+                        <span class="valor-veiculo">R$ 2500,00</span>
+                        <button class="mostrar-detalhes" onclick="mostrarDetalhes(this)">Mostrar Detalhes</button>
+                        <div class="detalhes" style="display: none;">
+                            <p>GRUPO DO CARRO - NOME DO GRUPO</p>
+                            <p>4 portas       Ar-condicionado</p>
+                            <p>Vidro elétrico  Trava elétrica</p>
+                            <p>Air bag   Dir.Hidráulica</p>
+                            <p>ABS   Tamanho do porta-malas</p>
+                            <p>4 pessoas</p>
+                            <button class="esconder-detalhes" onclick="esconderDetalhes(this)">Esconder Detalhes</button>
+                        </div>
                     </div>
                     <button class="botao-grupo-carros">Escolher</button>
-                  </div>
-
-                  <div class="col">
-                    <div class="grupo-carros">
-                        <div class="barra-titulo">Grupo A</div>
-
-                        <div class="img-carros">
-                            <img class="img-grupo" src="imagens/VEICULO-removebg-preview.png">
-                        </div>
-
-                            <span class="span-txt">xxxxxxxxx</span>
-                            <span class="valor-veiculo">R$ 2500,00</span>
-                    </div>
-                    <button class="botao-grupo-carros">Escolher</button>
-                  </div>
-
+                </div>
+                <!-- Repetir até aqui para cada card -->
             </div>
-          </div>
-    </box>
+        </div>
+    </div>
 
-    </body>
+    <script src="tela-de-reserva.js"></script>
+</body>
 </html>
