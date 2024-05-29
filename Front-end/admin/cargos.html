@@ -1,80 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Cargos</title>
+    <title>Apuama - Cargos</title>
     <link rel="stylesheet" href="cargos.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li class="menu-item" id="cadastros-gerais">
-                        <a href="#">Cadastros Gerais</a>
-                        <ul class="submenu">
-                            <li><a href="cargos.html">Cargos</a></li>
-                            <li><a href="cidades.html">Cidades</a></li>
-                            <li><a href="grupos_veiculos.html">Grupos de Veículos</a></li>
-                            <li><a href="itens_checkin.html">Itens do Checkin</a></li>
-                            <li><a href="seguros_locacoes.html">Seguros das Locações</a></li>
-                            <li><a href="tipos_adicionais.html">Tipos de Adicionais</a></li>
-                            <li><a href="tipos_cobrancas_extras.html">Tipos de Cobranças Extras</a></li>
-                            <li><a href="tipos_recebimentos.html">Tipos de Recebimentos</a></li>
-                            <li><a href="tipos_fornecedores.html">Tipos de Fornecedores</a></li>
-                            <li><a href="tipos_tarifas.html">Tipos de Tarifas</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item" id="cadastro-pessoas">
-                        <a href="#">Cadastro de Pessoas</a>
-                        <ul class="submenu">
-                            <li><a href="clientes.html">Clientes</a></li>
-                            <li><a href="funcionarios.html">Funcionários</a></li>
-                            <li><a href="fornecedores.html">Fornecedores</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item" id="financeiro">
-                        <a href="#">Financeiro</a>
-                        <ul class="submenu">
-                            <li><a href="plano_contas.html">Plano de Contas</a></li>
-                            <li><a href="contas_receber.html">Contas a Receber</a></li>
-                            <li><a href="contas_pagar.html">Contas a Pagar</a></li>
-                            <li><a href="caixa.html">Caixa</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item" id="locacoes">
-                        <a href="#">Locações</a>
-                        <ul class="submenu">
-                            <li><a href="veiculos.html">Veículos</a></li>
-                            <li><a href="locacoes_devolucoes.html">Locações/Devoluções</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="main-content">
-            <header>
-                <h1>Cadastro de Cargos</h1>
-            </header>
-            <section class="form-section">
-                <form id="cargoForm">
-                    <label for="cargoNome">Nome do Cargo:</label>
-                    <input type="text" id="cargoNome" name="cargoNome" required>
-                    
-                    <button type="submit">Cadastrar</button>
-                </form>
-            </section>
-            <section class="list-section">
-                <h2>Lista de Cargos</h2>
-                <ul id="cargoList">
-                    <!-- Lista de cargos será inserida aqui -->
-                </ul>
-            </section>
-        </main>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/Front-end/imagens/logo.p.png" alt="Apuama">
+            <h1>Apuama</h1>
+            <p>Software para locadoras</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li>
+                    <a href="#cadastros-gerais">Cadastros Gerais</a>
+                    <ul>
+                        <li><a href="#cargos">Cargos</a></li>
+                        <li><a href="#cidades">Cidades</a></li>
+                        <li><a href="#grupos-veiculos">Grupos de Veículos</a></li>
+                        <li><a href="#itens-checkin">Itens do Checkin</a></li>
+                        <li><a href="#seguros-locacoes">Seguros das Locações</a></li>
+                        <li><a href="#tipos-adicionais">Tipos de Adicionais</a></li>
+                        <li><a href="#tipos-cobrancas-extras">Tipos de Cobranças Extras</a></li>
+                        <li><a href="#tipos-recebimentos">Tipos de Recebimentos</a></li>
+                        <li><a href="#tipos-fornecedores">Tipos de Fornecedores</a></li>
+                        <li><a href="#tipos-tarifas">Tipos de Tarifas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#cadastro-pessoas">Cadastro de Pessoas</a>
+                    <ul>
+                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#funcionarios">Funcionários</a></li>
+                        <li><a href="#fornecedores">Fornecedores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#financeiro">Financeiro</a>
+                    <ul>
+                        <li><a href="#plano-contas">Plano de Contas</a></li>
+                        <li><a href="#contas-receber">Contas a Receber</a></li>
+                        <li><a href="#contas-pagar">Contas a Pagar</a></li>
+                        <li><a href="#caixa">Caixa</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#locacoes">Locações</a>
+                    <ul>
+                        <li><a href="#veiculos">Veículos</a></li>
+                        <li><a href="#locacoes-devolucoes">Locações/Devoluções</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </div>
+    <div class="main-content">
+        <header>
+            <div class="breadcrumb">
+                <a href="#home">Início</a> / <span>Cargos</span>
+            </div>
+            <div class="logout">
+                <a href="#sair">Sair</a>
+            </div>
+        </header>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="codigo">Código:</label>
+                    <input type="text" id="codigo" name="codigo" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-group">
+                    <label for="salario-base">Salário Base:</label>
+                    <input type="number" id="salario-base" name="salario-base" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="situacao">Situação:</label>
+                    <input type="checkbox" id="situacao" name="situacao" checked>
+                    <label for="situacao" class="inline-label">Ativo</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-save">Salvar</button>
+                    <button type="button" class="btn btn-close">Fechar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="cargos.js"></script>
-    <script src="menu.js"></script>
 </body>
 </html>
