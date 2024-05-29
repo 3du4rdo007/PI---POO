@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuama - Tipos de Fornecedores</title>
+    <link rel="stylesheet" href="tipos_fornecedores.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/Front-end/imagens/logo.p.png" alt="Apuama">
+            <h1>Apuama</h1>
+            <p>Software para locadoras</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li>
+                    <a href="#cadastros-gerais">Cadastros Gerais</a>
+                    <ul>
+                        <li><a href="#cargos">Cargos</a></li>
+                        <li><a href="#cidades">Cidades</a></li>
+                        <li><a href="#grupos-veiculos">Grupos de Veículos</a></li>
+                        <li><a href="#itens-checkin">Itens do Checkin</a></li>
+                        <li><a href="#seguros-locacoes">Seguros das Locações</a></li>
+                        <li><a href="#tipos-adicionais">Tipos de Adicionais</a></li>
+                        <li><a href="#tipos-cobrancas-extras">Tipos de Cobranças Extras</a></li>
+                        <li><a href="#tipos-recebimentos">Tipos de Recebimentos</a></li>
+                        <li><a href="#tipos-fornecedores">Tipos de Fornecedores</a></li>
+                        <li><a href="#tipos-tarifas">Tipos de Tarifas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#cadastro-pessoas">Cadastro de Pessoas</a>
+                    <ul>
+                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#funcionarios">Funcionários</a></li>
+                        <li><a href="#fornecedores">Fornecedores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#financeiro">Financeiro</a>
+                    <ul>
+                        <li><a href="#plano-contas">Plano de Contas</a></li>
+                        <li><a href="#contas-receber">Contas a Receber</a></li>
+                        <li><a href="#contas-pagar">Contas a Pagar</a></li>
+                        <li><a href="#caixa">Caixa</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#locacoes">Locações</a>
+                    <ul>
+                        <li><a href="#veiculos">Veículos</a></li>
+                        <li><a href="#locacoes-devolucoes">Locações/Devoluções</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="breadcrumb">
+                <a href="#home">Início</a> / <span>Tipos de Fornecedores</span>
+            </div>
+            <div class="logout">
+                <a href="#sair">Sair</a>
+            </div>
+        </header>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="codigo">Código:</label>
+                    <input type="text" id="codigo" name="codigo" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-group">
+                    <label for="situacao">Situação:</label>
+                    <input type="checkbox" id="situacao" name="situacao" checked>
+                    <label for="situacao" class="inline-label">Ativo</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-save">Salvar</button>
+                    <button type="button" class="btn btn-close">Fechar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="tipos_fornecedores.js"></script>
+</body>
+</html>
