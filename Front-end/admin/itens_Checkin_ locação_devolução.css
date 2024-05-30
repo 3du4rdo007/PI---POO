@@ -15,8 +15,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #303f9f;
-    color: #ffffff;
+    background-color: #2c3e50; /* Fundo igual ao da sidebar */
+    color: #ecf0f1; /* Texto igual ao do menu */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,16 @@ header {
 }
 
 header h1 {
-    margin: 0;
+    margin-right: 50px;
+    padding-bottom: 35px;
+}
+
+#h1{
+    color: #4043fc;
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 45px;
 }
 
 header button {
@@ -35,36 +44,71 @@ header button {
     background-color: #f44336;
     color: #ffffff;
     cursor: pointer;
+    margin-right: 50px;
+}
+
+header button:hover {
+    background-color: #d1382d;
 }
 
 nav {
     width: 200px;
-    background-color: #3f51b5;
-    color: #ffffff;
-    padding-top: 80px; /* Adjusted for header height */
+    background-color: #2c3e50;
+    color: #ecf0f1; 
+    padding-top: 80px; 
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     overflow-y: auto;
+    margin-top: 80px;
+    outline: none;
 }
+
+#cadastros-gerais {
+ 
+    background-color: #2c3e50; 
+    padding: 20px;
+    list-style: none;
+    margin: 0; 
+    display: none;
+  }
+  
+  #cadastros-gerais li {
+  
+    margin-bottom: 10px;
+  }
+  
+  #cadastros-gerais a {
+  
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+  }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
 
 nav ul li {
     padding: 15px;
-    border-bottom: 1px solid #ffffff;
+    background-color: #2c3e50; 
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    background-color: #1abc9c; 
 }
 
 main {
     flex-grow: 1;
     margin-left: 200px;
     padding: 20px;
-    padding-top: 80px; /* Adjusted for header height */
+    padding-top: 80px; 
 }
 
 .breadcrumb {
@@ -72,7 +116,7 @@ main {
 }
 
 .breadcrumb span {
-    color: #3f51b5;
+    color: #3498db; 
 }
 
 form {
@@ -112,6 +156,15 @@ button[type="submit"], button[type="button"] {
     cursor: pointer;
 }
 
+button[type="submit"]:hover {
+    background-color: #364599;
+}
+
+
 button[type="button"] {
-    background-color: #f44336;
+    background-color: #f44336;
+}
+
+button[type="button"]:hover {
+    background-color: #dd3a2e;
 }
