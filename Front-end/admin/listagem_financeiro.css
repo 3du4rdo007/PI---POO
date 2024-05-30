@@ -19,6 +19,13 @@ body {
     box-sizing: border-box;
 }
 
+#h2{
+    color: #4043fc;
+    margin-top: 10px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
 .sidebar-header {
     text-align: center;
     margin-bottom: 20px;
@@ -31,6 +38,7 @@ body {
 .menu {
     list-style: none;
     padding: 0;
+    margin-top: 85px;
 }
 
 .menu li {
@@ -47,7 +55,7 @@ body {
 }
 
 .menu a:hover, .menu a.expandable:hover {
-    background-color: #34495e;
+    background-color: #1abc9c;
 }
 
 .submenu {
@@ -76,6 +84,12 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+}
+
+.logout-button:hover {
+    background-color: #b1392c;
 }
 
 .toolbar {
@@ -93,31 +107,59 @@ body {
 
 .btn.new {
     background-color: #3498db;
-}
-
-.btn.edit {
-    background-color: #9b59b6;
-}
-
-.btn.remove {
-    background-color: #1abc9c;
-}
-
-.btn.cancel {
-    background-color: #f39c12;
-}
-
-.btn.delete {
-    background-color: #e74c3c;
-}
-
-.btn.receipt {
+  }
+  
+  .btn.new:hover {
     background-color: #2980b9;
-}
-
-.btn.report {
+  }
+  
+  .btn.edit {
+    background-color: #9b59b6;
+  }
+  
+  .btn.edit:hover {
+    background-color: #7f438c;
+  }
+  
+  .btn.remove {
+    background-color: #1abc9c;
+  }
+  
+  .btn.remove:hover {
+    background-color: #128573;
+  }
+  
+  .btn.cancel {
+    background-color: #f39c12;
+  }
+  
+  .btn.cancel:hover {
+    background-color: #c9750b;
+  }
+  
+  .btn.delete {
+    background-color: #e74c3c;
+  }
+  
+  .btn.delete:hover {
+    background-color: #c0392b;
+  }
+  
+  .btn.receipt {
+    background-color: #2980b9;
+  }
+  
+  .btn.receipt:hover {
+    background-color: #20608c;
+  }
+  
+  .btn.report {
     background-color: #16a085;
-}
+  }
+  
+  .btn.report:hover {
+    background-color: #11786a;
+  }
 
 .data-table {
     width: 100%;
@@ -157,6 +199,10 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #266fa0;
 }
 
 /* Modal styles */
