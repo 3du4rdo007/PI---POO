@@ -25,9 +25,16 @@ body {
 }
 
 .sidebar .logo-text {
-    color: #4043fc; 
+    color: #5356f8; 
     margin-top: 10px;
     font-size: 18px;
+    font-weight: bold;
+}
+
+#h1{
+    color: #4043fc;
+    margin-top: 10px;
+    font-size: 28px;
     font-weight: bold;
 }
 
