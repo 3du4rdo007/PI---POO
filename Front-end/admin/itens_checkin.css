@@ -102,6 +102,10 @@ header .logout a {
     background-color: #dc3545;
 }
 
+.actions .btn-delete:hover {
+    background-color: #c52f3e;
+}
+
 .actions .search {
     display: flex;
     align-items: center;
