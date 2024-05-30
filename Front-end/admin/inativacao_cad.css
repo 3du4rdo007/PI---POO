@@ -1,92 +1,178 @@
 body {
-    display: flex;
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f4f4f4;
 }
 
 .sidebar {
     width: 250px;
-    background-color: #343a40;
-    color: white;
-    padding: 15px;
+    background-color: #2c3e50; 
+    color: #ecf0f1;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+#h1{
+    color: #4043fc;
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo img {
+    max-width: 100px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    color: #ecf0f1; 
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #2c3e50; 
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #1abc9c; 
+}
+
+.sidebar nav ul ul {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.sidebar nav ul li:hover > ul {
+    display: block;
+}
+
+.sidebar nav ul li.submenu-active > a {
+    background-color: #2980b9; 
+}
+
+.sidebar nav ul .submenu a {
+    color: #3498db; 
+    background-color: #2c3e50; 
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul .submenu a:hover {
+    background-color: #34495e; 
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .breadcrumb {
+    font-size: 14px;
+}
+
+header .breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+header .logout a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
 }
 
-.logo h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.logo p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.menu {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.menu-item {
-    padding: 10px;
-    cursor: pointer;
-    border-bottom: 1px solid #495057;
-}
-
-.submenu {
-    list-style-type: none;
-    padding-left: 20px;
-    display: none;
-}
-
-.submenu li {
-    padding: 5px 0;
-    cursor: pointer;
-}
-
-.main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #f8f9fa;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header h2 {
-    margin: 0;
-}
-
-.logout {
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.form-container {
-    margin-top: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
 .form-group label {
-    display: block;
     margin-bottom: 5px;
 }
 
-.form-group input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-button[type="submit"], button[type="button"] {
-    padding: 10px 15px;
-    margin-right: 10px;
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.inline-label {
+    display: inline-block;
+}
+
+.form-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-save {
+    background-color: #28a745;
+}
+
+.btn-close {
+    background-color: #6c757d;
+}
+
+.btn-save:hover{
+        background-color: #218838;
+}
+
+
+.btn-close:hover {
+    background-color: #5a6268;
 }
