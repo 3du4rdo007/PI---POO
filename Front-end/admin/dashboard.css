@@ -148,3 +148,34 @@ header .logout a {
     width: 100%;
     height: auto;
 }
+
+
+.sidebar {
+    background-color: #2c3e50;
+    color: #ecf0f1; 
+}
+
+.sidebar nav ul li a {
+    background-color: #2c3e50;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #1abc9c;
+}
+
+.sidebar .submenu a {
+    color: #3498db;
+    background-color: #2c3e50;
+}
+
+.sidebar .submenu a:hover {
+    background-color: #34495e;
+}
+
+.sidebar .submenu-active > a {
+    background-color: #2980b9;
+}
+
+.sidebar .logo-text {
+    color: #4043fc; 
+}
