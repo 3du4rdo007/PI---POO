@@ -8,7 +8,7 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: #343a40;
+    background-color: #2c3e50; /* Cor de fundo igual à nova seção */
     color: white;
     height: 100vh;
     padding: 20px;
@@ -24,6 +24,13 @@ body {
     max-width: 100px;
 }
 
+.sidebar .logo-text {
+    color: #4043fc; /* Cor do texto da logo */
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .sidebar nav ul {
     list-style: none;
     padding: 0;
@@ -34,17 +41,17 @@ body {
 }
 
 .sidebar nav ul li a {
-    color: white;
+    color: #ecf0f1; /* Cor do texto igual à nova seção */
     text-decoration: none;
     display: block;
     padding: 10px;
-    background-color: #343a40;
+    background-color: #2c3e50; /* Cor de fundo igual à nova seção */
     border-radius: 4px;
     transition: background-color 0.3s;
 }
 
 .sidebar nav ul li a:hover {
-    background-color: #495057;
+    background-color: #1abc9c; /* Hover igual ao dos links do menu principal */
 }
 
 .sidebar nav ul ul {
@@ -55,6 +62,20 @@ body {
 
 .sidebar nav ul li:hover > ul {
     display: block;
+}
+
+.sidebar nav ul .submenu a {
+    color: #3498db; /* Texto dos itens do submenu */
+    background-color: #2c3e50; /* Fundo igual ao da sidebar */
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul .submenu a:hover {
+    background-color: #34495e; /* Hover igual ao dos itens do submenu */
+}
+
+.sidebar nav ul li.submenu-active > a {
+    background-color: #2980b9; /* Fundo do submenu ativo */
 }
 
 .main-content {
@@ -144,4 +165,10 @@ form {
 
 .btn-close {
     background-color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
 }
