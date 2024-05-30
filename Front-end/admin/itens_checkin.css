@@ -8,8 +8,8 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: #343a40;
-    color: white;
+    background-color: #2c3e50; /* Fundo igual ao da sidebar */
+    color: #ecf0f1; /* Texto igual ao do menu */
     height: 100vh;
     padding: 20px;
     box-sizing: border-box;
@@ -34,17 +34,17 @@ body {
 }
 
 .sidebar nav ul li a {
-    color: white;
+    color: #ecf0f1; /* Texto igual ao do menu */
     text-decoration: none;
     display: block;
     padding: 10px;
-    background-color: #343a40;
+    background-color: #2c3e50; /* Fundo igual ao da sidebar */
     border-radius: 4px;
     transition: background-color 0.3s;
 }
 
 .sidebar nav ul li a:hover {
-    background-color: #495057;
+    background-color: #1abc9c; /* Hover igual ao dos links do menu principal */
 }
 
 .main-content {
@@ -71,7 +71,7 @@ header .breadcrumb a {
 
 header .logout a {
     text-decoration: none;
-    color: #343a40;
+    color: #2c3e50; /* Texto igual ao do menu */
 }
 
 .actions {
@@ -94,8 +94,16 @@ header .logout a {
     background-color: #28a745;
 }
 
+.actions .btn-new:hover {
+    background-color: #208638;
+}
+
 .actions .btn-edit {
     background-color: #ffc107;
+}
+
+.actions .btn-edit:hover {
+    background-color: #e0aa05;
 }
 
 .actions .btn-delete {
@@ -141,8 +149,8 @@ table th, table td {
 }
 
 table th {
-    background-color: #343a40;
-    color: white;
+    background-color: #2c3e50; /* Fundo igual ao da sidebar */
+    color: #ecf0f1; /* Texto igual ao do menu */
 }
 
 .pagination {
@@ -156,7 +164,7 @@ table th {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    background-color: #343a40;
-    color: white;
-    margin-left: 5px;
+    background-color: #2c3e50; /* Fundo igual ao da sidebar */
+    color: #ecf0f1; /* Texto igual ao do menu */
+    margin-left: 5px;
 }
