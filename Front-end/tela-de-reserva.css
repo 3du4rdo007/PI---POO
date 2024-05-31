@@ -90,7 +90,7 @@ a:hover::after{
     width: 100%;
     height: 100%;
     display:grid;
-    background-color: rgba(82, 143, 235, 1);
+    background-color: #528feb;
 }
 
 .img-planodefundo{
