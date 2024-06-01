@@ -228,7 +228,7 @@ div input{
   
   .col { /* Estilos para cada div (coluna) */
     border: 1px solid #ccc; /* Borda simples para distinção visual */ /* Acolchoamento em torno do conteúdo */
-    background-color: gray;
+    background-color: rgb(214, 214, 214);
     width: 300px;
     height: 400px;
   }
