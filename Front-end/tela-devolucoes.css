@@ -1,100 +1,100 @@
 body{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header{
-    background-color: rgb(231, 231, 230);
-    padding: 20px;
-    margin-bottom: 30px;
+  background-color: rgb(231, 231, 230);
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
 .CONTAINER-GERAL{
-    border: 2px solid rgb(116, 176, 255);
-    border-radius: 5px;
-    background-color: rgb(231, 231, 230);
-    margin-left: 25px;
-    margin-right: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 15px;
-    height: 850px;
+  border: 2px solid rgb(116, 176, 255);
+  border-radius: 5px;
+  background-color: rgb(231, 231, 230);
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  height: 850px;
 }
 
 /* --------------- MENU LATERAL-----------------*/
 
 /* estilo para o menu lateral */
 .menu-lateral {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px; /* largura do menu */
-    height: 100%;
-    background-color: #333; /* cor de fundo do menu */
-    color: #fff; /* cor do texto do menu */
-    padding-top: 50px; /* para deixar espaço para o cabeçalho */
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 210px; /* largura do menu */
+  height: 100%;
+  background-color: #508ce6; /* cor de fundo do menu */
+  color: #fff; /* cor do texto do menu */
+  padding-top: 50px; /* para deixar espaço para o cabeçalho */
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  
 }
 
 .menu-lateral ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 20px;
 }
 
 .menu-lateral ul li {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .menu-lateral ul li a {
-    display: block;
-    padding: 20px 0px 10px 0px;
-    color: inherit;
-    text-decoration: none;
+  display: block;
+  padding: 20px 0px 10px 0px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .menu-lateral ul li a:hover {
-    background-color: #555; /* cor de fundo quando o item do menu é hover */
-    color: rgb(100, 171, 253);
-    border-radius: 5px;
+  background-color: #2f4f80; /* cor de fundo quando o item do menu é hover */
+  color: rgb(253, 253, 253);
+  border-radius: 5px;
 }
 
 /* ajuste o conteúdo principal para não ficar atrás do menu */
 .CONTAINER-GERAL {
-    margin-left: 200px; /* ajuste de acordo com a largura do menu */
+  margin-left: 200px; /* ajuste de acordo com a largura do menu */
 }
 
 i{
-    padding-right: 5px;
+  padding-right: 5px;
 }
 
 
 /* --------------- LINHA 01 -----------------*/
 
 .linha-1{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    outline: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
 
 }
 
 .inputs-1{
-    border-radius: 5px;
-    height: 35px;
-    font-size: 20px;
-    width: 200px;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 20px;
+  width: 200px;
 }
 
 .col-1, .col-2{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .col-1 label, .col-2 label{
@@ -105,27 +105,27 @@ margin-bottom: 5px;
 /* --------------- LINHA 02 -----------------*/
 
 .linha-2{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    outline: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
 
 }
 
 .inputs-2{
-    border-radius: 5px;
-    height: 35px;
-    font-size: 20px;
-    width: 200px;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 20px;
+  width: 200px;
 }
 
 
 .col-3, .col-4, .col-5, .col-6{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .col-3 label, .col-4 label, .col-5 label, .col-6 label{
@@ -135,27 +135,27 @@ margin-bottom: 5px;
 /* --------------- LINHA 03 -----------------*/
 
 .linha-3{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    outline: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
 
 }
 
 .inputs-3{
-    border-radius: 5px;
-    height: 35px;
-    font-size: 20px;
-    width: 200px;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 20px;
+  width: 200px;
 }
 
 
 .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .col-7 label, .col-8 label, .col-9 label, .col-10 label, 
@@ -166,27 +166,27 @@ margin-bottom: 5px;
 /* --------------- LINHA 04 -----------------*/
 
 .linha-4{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    outline: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
 
 }
 
 .inputs-4{
-    border-radius: 5px;
-    height: 35px;
-    font-size: 20px;
-    width: 200px;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 20px;
+  width: 200px;
 }
 
 
 .col-14, .col-15, .col-16, .col-17, .col-18, .col-19{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .col-14 label, .col-15 label, .col-16 label, .col-17 label, 
@@ -200,26 +200,26 @@ margin-bottom: 5px;
 /*---------------- RESPONSIVIDADE ----------------*/
 
 @media (max-width: 1530px) {
-    .linha-1,
-    .linha-2,
-    .linha-3,
-    .linha-4 {
-        flex-direction: column;
-        width: 100%;
-    }
+  .linha-1,
+  .linha-2,
+  .linha-3,
+  .linha-4 {
+      flex-direction: column;
+      width: 100%;
+  }
 
-    .inputs-1,
-    .inputs-2,
-    .inputs-3,
-    .inputs-4 
-    .inputs-7{
-        max-width: none;
-        width: 100%;
-    }
+  .inputs-1,
+  .inputs-2,
+  .inputs-3,
+  .inputs-4 
+  .inputs-7{
+      max-width: none;
+      width: 100%;
+  }
 
-    .CONTAINER-GERAL {
-        height: auto;
-    }
+  .CONTAINER-GERAL {
+      height: auto;
+  }
 
 }
 
@@ -229,233 +229,232 @@ margin-bottom: 5px;
 /* --------------- CONTAINER 1 -----------------*/
 
 .container-1 {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 25px;
-    padding-right: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .titulo-1 {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .linha-5 {
-    border: 2px solid gray;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 10px;
-    
+  border: 2px solid gray;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  
 }
 
 .col-20,
 .col-21,
 .col-22,
 .col-23 {
-    border: 2px solid black;
-    padding-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    border-color: gray;
+  border: 2px solid black;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-color: gray;
 }
 
 .col-20 label,
 .col-21 label,
 .col-22 label,
 .col-23 label {
-    margin-top: 15px;
-    order: 2;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-    margin-right: 20px;
-   
+  margin-top: 15px;
+  order: 2;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+ 
 }
 
 .col-20 input,
 .col-21 input,
 .col-22 input,
 .col-23 input {
-    order: 1;
-    margin-right: 20px;
-    transform: scale(3.5);
-    margin-top: 20px;
-    margin-left: 15px;
-    border-style: none;
-    outline: none;
-    height: 10px;
-    justify-content: space-between;
-    display: flex;
-    background-color: gray;
+  order: 1;
+  margin-right: 20px;
+  transform: scale(3.5);
+  margin-top: 20px;
+  margin-left: 15px;
+  border-style: none;
+  outline: none;
+  height: 10px;
+  justify-content: space-between;
+  display: flex;
+  background-color: gray;
 }
 
 /* --------------- CONTAINER 2 -----------------*/
 
 
 .container-2 {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 25px;
-    padding-right: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .titulo-2 {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .linha-6 {
-    border: 2px solid gray;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 10px;
-    
+  border: 2px solid gray;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  
 }
 
 .col-24,
 .col-25 {
-    border: 2px solid black;
-    padding-bottom: 20px;
-    display: flex;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    border-color: gray;
+  border: 2px solid black;
+  padding-bottom: 20px;
+  display: flex;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-color: gray;
 }
 
 .col-24 label,
 .col-25 label{
-    margin-top: 15px;
-    margin-right: 20px;
-    order: 2;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-   
+  margin-top: 15px;
+  margin-right: 20px;
+  order: 2;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+ 
 }
 
 .col-24 input,
 .col-25 input{
-    order: 1;
-    margin-right: 20px;
-    transform: scale(3.5);
-    margin-top: 20px;
-    margin-left: 15px;
-    border-style: none;
-    outline: none;
-    height: 10px;
-    display: flex;
-    background-color: gray;
+  order: 1;
+  margin-right: 20px;
+  transform: scale(3.5);
+  margin-top: 20px;
+  margin-left: 15px;
+  border-style: none;
+  outline: none;
+  height: 10px;
+  display: flex;
+  background-color: gray;
 }
 
 
 /* --------------- CONTAINER 3 -----------------*/
 
 .titulo-2 {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .linha-7 {
-    height: 70px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    padding-top: 10px;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-top: 10px;
 }
 
 .col-26 input{
-    height: 50px;
-    width: 1250px;
-    font-size: 20px;
-    border-radius: 5px;
-    margin-left: 5px;
+  height: 50px;
+  width: 1250px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 5px;
 }
 
 /* --------------- CONTAINER 4 -----------------*/
 
 .linha-8{
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 .botoes-8{
-    height: 50px;
+  height: 50px;
 }
 
 /* --------------- BOTOES FINAIS -----------------*/
 #salvar{
 font-weight: bold;
-background-color: rgb(0, 0, 248);
+background-color: rgb(67, 130, 189);
 color: white;
 border-radius: 5px;
 cursor: pointer;
 }
 
 #salvar:hover{
-    background-color: rgb(0, 0, 161);
-    }
+  background-color: #2f4f80;
+  }
 
 #Checkin{
-    font-weight: bold;
-    background-color: rgb(255, 187, 0);
-    color: white;
-    border-radius: 5px; 
-    cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(255, 187, 0);
+  color: white;
+  border-radius: 5px; 
+  cursor: pointer;
 }
 
 #Checkin:hover{
-    background-color: rgb(182, 134, 1);
+  background-color: rgb(182, 134, 1);
 }
 
 #contas{
-    font-weight: bold;
-    background-color: rgb(18, 182, 3);
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(18, 182, 3);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #contas:hover{
-    background-color: rgb(10, 109, 1);
+  background-color: rgb(10, 109, 1);
 }
 
 #contrato{
-    font-weight: bold;
-    background-color: rgb(125, 125, 252);
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(61, 61, 243);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #contrato:hover{
-    background-color: rgb(38, 38, 250);
+  background-color: #0f3266;
 }
 
 #comprovante{
-    font-weight: bold;
-    background-color: rgb(125, 125, 252);
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(76, 76, 204);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #comprovante:hover{
-    background-color: rgb(38, 38, 250);
+  background-color: #0042a5;
 }
 
 #fechar{
-    font-weight: bold;
-    background-color: rgb(124, 124, 124);
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(124, 124, 124);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #fechar:hover{
-    background-color: rgb(92, 92, 92);
+  background-color: rgb(92, 92, 92);
 }
-
