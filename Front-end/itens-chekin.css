@@ -8,7 +8,7 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: #484949;
+    background-color: #528feb;
     color: white;
     height: 100vh;
     padding: 20px;
@@ -18,7 +18,7 @@ body {
 .sidebar .logo {
     text-align: center;
     margin-bottom: 20px;
-    color: rgb(3, 109, 231);
+    color: white;
     font-size: 18px;
     font-weight: bold;
 }
@@ -47,7 +47,7 @@ body {
     text-decoration: none;
     display: block;
     padding: 10px 10px 10px 0px;
-    background-color: #484949;
+    background-color: #528feb;
     border-radius: 4px;
     transition: background-color 0.3s;
     margin-top: 20px;
