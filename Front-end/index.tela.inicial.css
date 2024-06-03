@@ -1,0 +1,145 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2, h3, p {
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+}
+
+header .logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+header .h4 {
+    margin-left: 15px;
+    font-size: 2em;
+}
+
+header nav a {
+    color: white;
+    margin-right: 30px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #27395c;
+}
+
+header .d-flex a {
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
+header .d-flex a:hover {
+    color:#333;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 90%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-text h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn-info {
+    background-color: #17a2b8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.hero-text .btn-info:hover {
+    background-color: #138496;
+}
+
+/* New Section Styles */
+section {
+    padding: 60px 0;
+    background: linear-gradient(145deg, #6caaf1, #ffffff);
+}
+
+section .row div {
+    margin-bottom: 30px;
+}
+
+section img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6caaf1;
+    color: #555;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+
+footer p {
+    margin: 0;
+}
