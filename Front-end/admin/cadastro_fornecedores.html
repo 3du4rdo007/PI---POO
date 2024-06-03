@@ -3,54 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apuama - Clientes</title>
-    <link rel="stylesheet" href="cadastro_clientes.css">
+    <title>Apuama - Cadastro de Fornecedores</title>
+    <link rel="stylesheet" href="cadastro_fornecedores.css">
 </head>
 <body>
     <div class="sidebar">
         <div class="logo">
             <img src="/PI---POO/Front-end/imagens/logoempresa1.png" alt="Apuama">
-            <h1 class="logo-text">Apuama</h1>
-            <p class="sub-logo-text">Software para locadoras</p>
+            <h1>Apuama</h1>
+            <p>Software para locadoras</p>
         </div>
         <nav>
             <ul>
                 <li><a href="#dashboard">Dashboard</a></li>
                 <li>
-                    <a href="#cadastros-gerais" id="cadastros-gerais-link">Cadastros Gerais</a>
-                    <ul id="cadastros-gerais-options" class="hidden">
-                        <li><a href="/PI---POO/Front-end/admin/cargos.html">Cargos</a></li>
-                        <li><a href="/PI---POO/Front-end/admin/cidades.html">Cidades</a></li>
-                        <li><a href="/PI---POO/Front-end/admin/edicao_veiculos.html">Grupos de Veículos</a></li>
-                        <li><a href="/PI---POO/Front-end/admin/itens_checkin.html">Itens do Checkin</a></li>
-                        <li><a href="/PI---POO/Front-end/admin/seguro_locações.html">Seguros das Locações</a></li>
-                        <li><a href="/PI---POO/Front-end/admin/tipos_adicionais.html">Tipos de Adicionais</a></li>
-                        <li><a href="/PI---POO/Front-end/admin/tipos_cobrancas_extras.html">Tipos de Cobranças Extras</a></li>
-                        <li><a href="/PI---POO/Front-end/admin/tipos_recebimentos.html">Tipos de Recebimentos</a></li>
-                        <li><a href="/PI---POO/Front-end/admin/tipos_fornecedores.html">Tipos de Fornecedores</a></li>
-                        <li><a href="/PI---POO/Front-end/admin/tipos_tarifas.html">Tipos de Tarifas</a></li>
+                    <a href="#cadastros-gerais">Cadastros Gerais</a>
+                    <ul>
+                        <li><a href="#cargos">Cargos</a></li>
+                        <li><a href="#cidades">Cidades</a></li>
+                        <li><a href="#grupos-veiculos">Grupos de Veículos</a></li>
+                        <li><a href="#itens-checkin">Itens do Checkin</a></li>
+                        <li><a href="#seguros-locacoes">Seguros das Locações</a></li>
+                        <li><a href="#tipos-adicionais">Tipos de Adicionais</a></li>
+                        <li><a href="#tipos-cobrancas-extras">Tipos de Cobranças Extras</a></li>
+                        <li><a href="#tipos-recebimentos">Tipos de Recebimentos</a></li>
+                        <li><a href="#tipos-fornecedores">Tipos de Fornecedores</a></li>
+                        <li><a href="#tipos-tarifas">Tipos de Tarifas</a></li>
                     </ul>
                 </li>
-                <li><a href="#cadastro-pessoas">Cadastro de Pessoas</a></li>
-                <li><a href="#financeiro">Financeiro</a></li>
-                <li><a href="#locacoes">Locações</a></li>
+                <li>
+                    <a href="#cadastro-pessoas">Cadastro de Pessoas</a>
+                    <ul>
+                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#funcionarios">Funcionários</a></li>
+                        <li><a href="#fornecedores">Fornecedores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#financeiro">Financeiro</a>
+                    <ul>
+                        <li><a href="#plano-contas">Plano de Contas</a></li>
+                        <li><a href="#contas-receber">Contas a Receber</a></li>
+                        <li><a href="#contas-pagar">Contas a Pagar</a></li>
+                        <li><a href="#caixa">Caixa</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#locacoes">Locações</a>
+                    <ul>
+                        <li><a href="#veiculos">Veículos</a></li>
+                        <li><a href="#locacoes-devolucoes">Locações/Devoluções</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </div>
     <div class="main-content">
         <header>
             <div class="breadcrumb">
-                <a href="/PI---POO/Front-end/admin/dashboard.html">Início</a> / <span>Clientes</span>
+                <a href="#home">Início</a> / <span>Cadastro de Fornecedores</span>
             </div>
             <div class="logout">
-                <a href="/PI---POO/Front-end/index.tela.inicial.html">Sair</a>
+                <a href="#sair">Sair</a>
             </div>
         </header>
         <div class="form-container">
-            <!-- Form content -->
+            <form>
+                <div class="form-group">
+                    <label for="codigo">Código:</label>
+                    <input type="text" id="codigo" name="codigo" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-group">
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" id="cnpj" name="cnpj">
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="situacao">Situação:</label>
+                    <input type="checkbox" id="situacao" name="situacao" checked>
+                    <label for="situacao" class="inline-label">Ativo</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-save">Salvar</button>
+                    <button type="button" class="btn btn-close">Fechar</button>
+                </div>
+            </form>
         </div>
     </div>
 
-    <script src="cadastro_clientes.js"></script>
+    <script src="cadastro_fornecedores.js"></script>
 </body>
 </html>
