@@ -75,16 +75,17 @@ body {
 
 .link-cadastro-container {
   margin-top: 20px;
+  color: white;
 }
 
 .link-cadastro {
-  color: #007bff;
+  color: white;
   text-decoration: none;
 }
 
 .link-cadastro:hover {
   text-decoration: underline;
-  color: rgb(104, 218, 193);
+  color: black;
 }
 
 #texto-centralizado {
