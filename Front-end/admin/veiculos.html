@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuama - Veículos</title>
+    <link rel="stylesheet" href="veiculos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/PI---POO/Front-end/imagens/logoempresa1.png" alt="Apuama">
+            <h1 id="h1">Apuama</h1>
+            <p>Software para locadoras</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li>
+                    <a href="#cadastros-gerais">Cadastros Gerais</a>
+                    <ul id="cadastros-gerais-options" class="hidden">
+                        <li><a href="/PI---POO/Front-end/admin/cargos.html">Cargos</a></li>
+                        <li><a href="/PI---POO/Front-end/admin/cidades.html">Cidades</a></li>
+                        <li><a href="/PI---POO/Front-end/admin/edicao_veiculos.html">Grupos de Veículos</a></li>
+                        <li><a href="/PI---POO/Front-end/admin/itens_checkin.html">Itens do Checkin</a></li>
+                        <li><a href="/PI---POO/Front-end/admin/seguro_locações.html">Seguros das Locações</a></li>
+                        <li><a href="/PI---POO/Front-end/admin/tipos_adicionais.html">Tipos de Adicionais</a></li>
+                        <li><a href="/PI---POO/Front-end/admin/tipos_cobrancas_extras.html">Tipos de Cobranças Extras</a></li>
+                        <li><a href="/PI---POO/Front-end/admin/tipos_recebimentos.html">Tipos de Recebimentos</a></li>
+                        <li><a href="/PI---POO/Front-end/admin/tipos_fornecedores.html">Tipos de Fornecedores</a></li>
+                        <li><a href="/PI---POO/Front-end/admin/tipos_tarifas.html">Tipos de Tarifas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#cadastro-pessoas">Cadastro de Pessoas</a>
+                    <ul>
+                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#funcionarios">Funcionários</a></li>
+                        <li><a href="#fornecedores">Fornecedores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#financeiro">Financeiro</a>
+                    <ul>
+                        <li><a href="#plano-contas">Plano de Contas</a></li>
+                        <li><a href="#contas-receber">Contas a Receber</a></li>
+                        <li><a href="#contas-pagar">Contas a Pagar</a></li>
+                        <li><a href="#caixa">Caixa</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#locacoes">Locações</a>
+                    <ul>
+                        <li><a href="#veiculos">Veículos</a></li>
+                        <li><a href="#locacoes-devolucoes">Locações/Devoluções</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="breadcrumb">
+                <a href="dashboard.html">Início</a> / <span>Veículos</span>
+            </div>
+            <div class="logout">
+                <a href="index.html">Sair</a>
+            </div>
+        </header>
+        <div>
+            <button class="btn" id="novo">+ Novo</button>
+            <button class="btn" id="editar">Editar</button>
+            <button class="btn" id="excluir">Excluir</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Valor da Diária</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ford</td>
+                    <td>Hatch</td>
+                    <td>230,00</td>
+                    <td>Indisponível</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Fiat</td>
+                    <td>Sedan</td>
+                    <td>243,00</td>
+                    <td>Disponível</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Kia</td>
+                    <td>SUV</td>
+                    <td>360,00</td>
+                    <td>Disponível</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="veiculos.js"></script>
+</body>
+</html>
