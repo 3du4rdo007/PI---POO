@@ -41,11 +41,11 @@ body {
   padding: 10px 20px;
   display: flex;
   justify-content:center;
-  align-items: left;
+  align-items: center; /* Alterado para centralizar verticalmente */
   gap: 10px;
   font-size: 16px;
   cursor: pointer;
-
+  text-decoration: none; /* Removido sublinhado */
 }
 
 .botao-google img,
@@ -58,11 +58,13 @@ body {
 .botao-google {
   width: 100%;
   border-color: #4285f4;
+  color: black;
 }
 
 .botao-apple {
-  width: 300%;
+  width: 100%; /* Alterado para manter a largura igual ao botão do Google */
   border-color: #ccc;
+  color: black;
 }
 
 .botao-email {
