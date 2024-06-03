@@ -13,7 +13,6 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-
 }
 
 /* header do site*/
@@ -72,7 +71,6 @@ a:hover::after{
     border-style: none;
     margin-right: 20px;
     cursor: pointer;
-    
 }
 
 .sociais button i{
@@ -82,7 +80,6 @@ a:hover::after{
 .sociais button i:hover{
     color: white;
 }
-
 
 /* agora começa a outra seção de container box-pesquisa*/
 
@@ -108,8 +105,6 @@ h1{
     margin-left: 50px;
     margin-top: 100px;
     justify-content: space-between;
-
-    
 }
 
 #container-barras::placeholder{
@@ -179,8 +174,7 @@ div input{
 
 /*---------------------------------------------------------------------*/
 
-
-  /* Estilos específicos para o botão 'Ver disponibilidade' */
+/* Estilos específicos para o botão 'Ver disponibilidade' */
 #show-grupo-button {
     display: inline;
     width: 80px;
@@ -192,24 +186,23 @@ div input{
     margin-left: 50%;
     color:white;
     cursor: pointer;
-  }
+}
 
-  #show-grupo-button:hover {
+#show-grupo-button:hover {
     color: black;
-  }
-  
-  /* Estilos de ícone (assumindo que você está usando Font Awesome) */
-  #show-grupo-button i {
+}
+
+/* Estilos de ícone (assumindo que você está usando Font Awesome) */
+#show-grupo-button i {
     font-size: 40px; /* Tamanho do ícone */
     margin-right: 5px; /* Adicione espaçamento entre o ícone e o texto */
-  }
+}
 
+/*-----*/
 
-  /*-----*/
+/*div que está escondida contendo os blocos*/
 
- /*div que está escondida contendo os blocos*/
-
- .box-grupo {
+.box-grupo {
     width: 100%; /* Mantém a largura do container */
     height: auto; /* Permite que a altura se ajuste ao conteúdo */
     display: flex; /* Habilita o layout flexbox para o container principal */
@@ -217,26 +210,28 @@ div input{
     align-items: center; /* Centraliza verticalmente dentro do container */
     justify-content: center; /* Centraliza horizontalmente dentro do container */
 }
-  
-  .caixas-modelo {
+
+.caixas-modelo {
     display: grid; /* Habilita o layout CSS Grid para o container interno */
     grid-template-columns: repeat(3, 1fr); /* Divide o container interno em 3 colunas iguais */
     gap: 60px; /* Adiciona espaçamento entre os itens da grade dentro do container interno */
     background-color: white; /* Cor de fundo (ajuste para a cor desejada) */
     margin-top: 50px; /* Acolchoamento em torno do conteúdo */
-  }
-  
-  .col { /* Estilos para cada div (coluna) */
+}
+
+.col { /* Estilos para cada div (coluna) */
     border: 1px solid #ccc; /* Borda simples para distinção visual */ /* Acolchoamento em torno do conteúdo */
     background-color: rgb(214, 214, 214);
     width: 300px;
-    height: 400px;
-  }
+    height: 450px;
+    border-radius: 10px;
+}
+
 /*---------------------------------------------------------------------*/
 
-  /* os blocos*/
+/* os blocos*/
 
-  .barra-titulo{
+.barra-titulo{
     width: 100%;
     height: 80px;
     background-color: rgba(82, 143, 235, 1);
@@ -245,53 +240,52 @@ div input{
     align-items: center;
     justify-content: center;
     color:white;
-  }
+}
 
-  .img-carros{
+.img-carros{
     display: flex;
     flex-direction: column;
     transform: scale(0.7);
-  }
+}
 
-  .img-carros:hover{
+.img-carros:hover{
     transform: scale(0.9);
     cursor: pointer;
-  }
+}
 
-  .span-txt{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-  }
+.span-txt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
 
-  .valor-veiculo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px; 
-    background-color: white;
-    margin: 10px 40px 10px 40px;
-    border-radius: 5px;
-  }
+.valor-veiculo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; 
+  background-color: white;
+  margin: 10px 40px 10px 40px;
+  border-radius: 5px;
+}
 
-  .botao-grupo-carros{
-    margin-left: 100px;
-    font-size: 20px;
-    width: 100px;
-    height: 50px;
-    background-color: #024591;
-    border-radius: 5px;
-    color: white;
-  }
+.botao-grupo-carros{
+  margin-left: 100px;
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: #024591;
+  border-radius: 5px;
+  color: white;
+}
 
-  .botao-grupo-carros:hover{
-    background-color: #c4c4c4;
-    color: rgb(23, 23, 24);
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
+.botao-grupo-carros:hover{
+  background-color: #c4c4c4;
+  color: rgb(23, 23, 24);
+  font-weight: bold;
+  cursor: pointer;
+}
 
 /* flip do card */
 
@@ -315,24 +309,80 @@ div input{
   backface-visibility: hidden;
   background-color: white;
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 8px;
   box-sizing: border-box;
   transform: rotateY(180deg);
   text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  line-height: 1.0;
+  color: black;
+  cursor: pointer; 
 }
 
-.mostrar-detalhes, .esconder-detalhes {
+.titulo-detalhes{
+    display: inline;
+    padding: 10px;
+}
+
+.detalhes p {
+  background-color: #f2f2f2; 
+  padding: 5px; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+  
+}
+
+.detalhes p:hover {
+    color:#528feb;
+    font-weight: bold;
+  }
+
+#button-detalhes-esconder{
+    position: absolute;
+    justify-content: center;
+
+  }
+
+.button-esconder-div{
+    display:flexbox;
+    margin-right: 800px;
+}
+
+.mostrar-detalhes{
   background-color: #c4c4c4;
   color: rgb(23, 23, 24);
   font-weight: bold;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 92px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-.mostrar-detalhes:hover, .esconder-detalhes:hover {
-  background-color: #005f5f;
+.mostrar-detalhes:hover{
+  background-color: #f7f7f7;
   text-align: center;
 }
 
-  
-                          
-  
+.esconder-detalhes {
+  background-color: #c4c4c4;
+  color: rgb(23, 23, 24);
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 80px;
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.esconder-detalhes:hover {
+  background-color: #f7f7f7;
+  text-align: center;
+}
