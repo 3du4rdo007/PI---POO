@@ -1,221 +1,189 @@
 /* Corpo da página */
 body {
-    /* Cor de fundo do corpo da página */
-    background-color: #528FEB;
-    
-    /* Configurações de layout */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    /* Altura e margem do corpo da página */
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Caixa de conteúdo */
-  .caixa {
-    /* Cor de fundo transparente da caixa */
-    background-color: transparent;
-    
-    /* Largura e layout da caixa */
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    /* Padding da caixa */
-    padding: 20px;
-  }
-  
-  /* Título de dados básicos */
-  .titulo-dados-basicos {
-    /* Padding e altura do título */
-    padding: 30px;
-    height: 50px;
-    
-    /* Fonte do título */
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
-  /* Entradas de dados */
-  .entradas-dados {
-    /* Padding e layout das entradas de dados */
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Campos de entrada */
-  #nome, #nacionalidade, #cpf, #email, #senha {
-    /* Padding, margem e altura dos campos de entrada */
-    padding: 15px 25px 15px 25px;
-    margin: 1px;
-    height: 15px;
-    
-    /* Largura e fonte dos campos de entrada */
-    width: 350px;
-    font-size: 20px;
-    border-radius: 20px;
-    border-width: 0;
-    outline: none;
-  }
-  
-  /* Container de gênero */
-  .container-genero {
-    /* Margem e largura do container de gênero */
-    margin: auto;
-    width: 400px;
-    height: 50px;
-  }
-  
-  .container-genero-checkbox {
-    /* Layout do container de checkbox */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  #genero {
-    /* Layout do elemento de gênero */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-  }
+  background-color: #528FEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 
-/* Configurações do checkbox de gênero */
+.caixa {
+  background-color: transparent;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.titulo-dados-basicos {
+  padding: 30px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Mensagem de erro */
+.mensagem-erro {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: none; /* Inicialmente escondida */
+}
+
+.entradas-dados {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nome, #nacionalidade, #cpf, #email, #senha {
+  padding: 15px 25px 15px 25px;
+  margin: 1px;
+  height: 15px;
+  width: 350px;
+  font-size: 20px;
+  border-radius: 20px;
+  border-width: 0;
+  outline: none;
+}
+
+.container-genero {
+  margin: auto;
+  width: 400px;
+  height: 50px;
+}
+
+.container-genero-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#genero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
 .check-genero {
-    /* Propriedades básicas do checkbox */
-    appearance: none;
-    width: 60px;
-    height: 35px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-    background-color: #ccc;
-    position: relative;
-  }
-  
-  /* Configurações do pseudo-elemento antes do checkbox */
-  .check-genero:before {
-    content: "";
-    position: relative;
-    top: 3px;
-    left: 1px;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border-radius: 20px;
-    transition: 0.3s;
-    align-items: center;
-    display: flex;
-  }
-  
-  /* Configurações do pseudo-elemento quando o checkbox está marcado */
-  .check-genero:checked:before {
-    transform: translateX(15px);
-    background-color: #fff;
-  }
-  
-  /* Configurações do checkbox quando está marcado */
-  .check-genero:checked {
-    background-color: #13457e;
-    border-color: #000000;
-  }
-  
-  /* Configurações da label do checkbox de gênero */
-  .container-genero-checkbox label {
-    font-size: 17px;
-    margin: 0;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Configurações do checkbox quando está marcado (duplicado, deve ser removido) */
-  .check-genero:checked {
-    background-color: #13457e;
-    border-color: #807f7f;
-  }
-  
-  /* Configurações dos botões de opção de gênero */
-  #masculino, #feminino, #outro {
-    margin: 0 20px 0 20px;
-    border-radius: 25px;
-    width: 42px;
-    height: 28px;
-  }
-  
-  /* Container do botão de entrada */
-  .button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 50px;
-  }
-  
-  /* Configurações do botão de entrada */
-  #botao-entrar {
-    padding: 15px 30px 15px 30px;
-    border-radius: 10px;
-    border: none;
-    border-width: 1px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    background-color: #13457e;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-sizing: border-box;
-    width: 200px;
-  }
-  
-  /* Configurações do botão de entrada ao passar o mouse */
-  #botao-entrar:hover {
-    background-color: #979797; /* cor do botão ao passar o mouse */
-    color: #0f0f0f; /* cor do texto ao passar o mouse */
-  }
+  appearance: none;
+  width: 60px;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #ccc;
+  position: relative;
+}
 
- /* Botão Voltar */
+.check-genero:before {
+  content: "";
+  position: relative;
+  top: 3px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: 0.3s;
+  align-items: center;
+  display: flex;
+}
+
+.check-genero:checked:before {
+  transform: translateX(15px);
+  background-color: #fff;
+}
+
+.check-genero:checked {
+  background-color: #13457e;
+  border-color: #000000;
+}
+
+.container-genero-checkbox label {
+  font-size: 17px;
+  margin: 0;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.check-genero:checked {
+  background-color: #13457e;
+  border-color: #807f7f;
+}
+
+#masculino, #feminino, #outro {
+  margin: 0 20px 0 20px;
+  border-radius: 25px;
+  width: 42px;
+  height: 28px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#botao-entrar {
+  padding: 15px 30px 15px 30px;
+  border-radius: 10px;
+  border: none;
+  border-width: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background-color: #13457e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  width: 200px;
+}
+
+#botao-entrar:hover {
+  background-color: #979797;
+  color: #0f0f0f;
+}
+
+/* Botão Voltar */
 .voltar-button {
-    /* Layout */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: none;
-  
-    /* Estilos */
-    background-color: #ececec;
-    color: black;
-    font-size: 16px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-  }
-   /* Configurações do botão de entrada ao passar o mouse */
-  .voltar-button:hover {
-    background-color: #979797;
-    color: white;
-  }
-  
-  /* Define a cor de fundo do elemento quando está clicando */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ececec;
+  color: black;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.voltar-button:hover {
+  background-color: #979797;
+  color: white;
+}
+
 .voltar-button:active {
-    background-color: #13457e;
+  background-color: #13457e;
 }

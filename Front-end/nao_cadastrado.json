@@ -1,0 +1,30 @@
+document.getElementById("botao-entrar").addEventListener("click", function(event) {
+    // Previne o comportamento padrão do botão
+    event.preventDefault();
+  
+    // Obtém os campos do formulário
+    const nome = document.getElementById("nome").value.trim();
+    const nacionalidade = document.getElementById("nacionalidade").value.trim();
+    const cpf = document.getElementById("cpf").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const senha = document.getElementById("senha").value.trim();
+  
+    // Obtém os checkboxes de gênero
+    const generoMasculino = document.getElementById("masculino").checked;
+    const generoFeminino = document.getElementById("feminino").checked;
+    const generoOutro = document.getElementById("outro").checked;
+  
+    // Obtém o elemento da mensagem de erro
+    const mensagemErro = document.getElementById("mensagemErro");
+  
+    // Verifica se todos os campos estão preenchidos e pelo menos um gênero está selecionado
+    if (nome === "" || nacionalidade === "" || cpf === "" || email === "" || senha === "" || (!generoMasculino && !generoFeminino && !generoOutro)) {
+      // Exibe a mensagem de erro
+      mensagemErro.textContent = "Preencha os campos com os dados obrigatórios.";
+      mensagemErro.style.display = "block";
+    } else {
+      // Redireciona para a tela de reserva se todos os campos estiverem preenchidos
+      window.location.href = "tela-de-reserva.html";
+    }
+  });
+  
